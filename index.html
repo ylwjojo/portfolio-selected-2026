@@ -6,8 +6,8 @@
   <meta name="theme-color" content="#10151d">
   <meta name="description" content="吴彦霖，产品体验设计师。聚焦交易体验、复杂系统与 AI 工作流，用设计判断连接用户问题与业务结果。">
   <title>吴彦霖 Yanlin Wu — 产品体验设计师</title>
-  <link rel="stylesheet" href="styles.css?v=2">
-  <script defer src="main.js"></script>
+  <link rel="stylesheet" href="styles.css?v=3">
+  <script defer src="main.js?v=3"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">跳到内容</a>
@@ -42,8 +42,30 @@
         <h2 id="intro-title">设计不是把页面画完。<br>是找到<span class="blue">值得改变的环节。</span></h2>
         <p>从一次手势的重新定义，到两套商详的结构整合，再到把验收变成可复用的工作流：我关心的问题横跨用户、业务和工程，也用不同类型的证据检验设计判断。</p>
       </div>
-      <div class="focus-line" aria-label="设计关注的三个层次">
-        <span>看见问题 <b>01</b></span><span>组织复杂性 <b>02</b></span><span>验证结果 <b>03</b></span>
+      <div class="focus-flow" aria-label="从问题到验证的设计判断流程">
+        <div class="focus-flow-caption"><span>FROM SIGNAL TO DECISION</span><span>选择节点，查看对应项目中的判断过程 ↓</span></div>
+        <div class="focus-flow-track" role="group" aria-label="设计判断的三个阶段">
+          <button class="focus-step is-active" type="button" data-focus-step="0" aria-pressed="true" aria-controls="focus-panel-1"><span class="focus-step-node">01</span><strong>看见问题</strong><small>从行为里找阻碍</small></button>
+          <button class="focus-step" type="button" data-focus-step="1" aria-pressed="false" aria-controls="focus-panel-2"><span class="focus-step-node">02</span><strong>组织复杂性</strong><small>把取舍写成规则</small></button>
+          <button class="focus-step" type="button" data-focus-step="2" aria-pressed="false" aria-controls="focus-panel-3"><span class="focus-step-node">03</span><strong>验证结果</strong><small>用证据决定下一轮</small></button>
+        </div>
+        <div class="focus-flow-detail" aria-live="polite">
+          <section class="focus-panel" id="focus-panel-1" data-focus-panel="0" aria-label="看见问题的案例">
+            <div class="focus-panel-head"><span>01 / IP 页滑动热区</span><h3>低价值的旧动作，能否服务更重要的内容探索？</h3></div>
+            <div class="focus-panel-path" aria-label="看见问题的判断路径"><div><span>观察</span><p>Tab 滑动使用走低，IP 内容曝光不足</p></div><div><span>判断</span><p>高频手势可以承载更有价值的动作</p></div><div><span>行动</span><p>改为切换 IP 内容，并加入首次动效提示</p></div></div>
+            <a href="case.html?id=hotzone">看这个判断如何落地 <span aria-hidden="true">↗</span></a>
+          </section>
+          <section class="focus-panel" id="focus-panel-2" data-focus-panel="1" aria-label="组织复杂性的案例" hidden>
+            <div class="focus-panel-head"><span>02 / 商详结构整合</span><h3>两种交易模式，哪些规则应该共享？</h3></div>
+            <div class="focus-panel-path" aria-label="组织复杂性的判断路径"><div><span>观察</span><p>自营与小店结构不同，交易状态组合繁多</p></div><div><span>判断</span><p>统一信息骨架，保留必要的业务差异</p></div><div><span>交付</span><p>按条件装配模块，定义状态与降级矩阵</p></div></div>
+            <a href="case.html?id=pdp">看这个判断如何落地 <span aria-hidden="true">↗</span></a>
+          </section>
+          <section class="focus-panel" id="focus-panel-3" data-focus-panel="2" aria-label="验证结果的案例" hidden>
+            <div class="focus-panel-head"><span>03 / AI 验收工作流</span><h3>差异清单真正进入团队协作了吗？</h3></div>
+            <div class="focus-panel-path" aria-label="验证结果的判断路径"><div><span>观察</span><p>人工走查耗时，误报会削弱团队信任</p></div><div><span>验证</span><p>人工复核清单、修正规则，跟踪团队采用</p></div><div><span>结果</span><p>进入日常使用；Review 与验收约提效 30%</p></div></div>
+            <a href="case.html?id=aiqa">看这个判断如何落地 <span aria-hidden="true">↗</span></a>
+          </section>
+        </div>
       </div>
     </section>
 
