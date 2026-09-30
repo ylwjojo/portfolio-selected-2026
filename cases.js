@@ -2,7 +2,7 @@
   const projects = {
     hotzone: {
       label: '01 / 交易导购 · 上线验证',
-      title: '重新定义一个手势，<br>让 IP 内容更容易被看见。',
+      title: '重新定义一个手势，<br>让 IP 内容<br class="mobile-br">更容易被看见。',
       deck: 'IP 页的左右滑动原本用于切换 Tab。当 Tab 使用价值下降、IP 内容入口又不够顺手时，我参与设计了对这块手势热区的重新分配。',
       facts: [['时间','2026'],['角色','产品体验设计'],['范围','IP 页交互策略'],['状态','已上线 · 实验验证']],
       media: '<figure class="case-media"><img src="assets/ip-hotzone-cover.jpg" alt="IP 页滑动热区交互视觉" width="1920" height="1080"></figure>',
@@ -51,7 +51,7 @@
     root.innerHTML = '<div class="wrap case-hero"><a class="case-back" href="index.html#work">← 返回精选项目</a><h1>没有找到这个案例。</h1></div>';
     return;
   }
-  document.title = `${project.title.replace(/<br\s*\/?\s*>/g, '')} — 吴彦霖`;
+  document.title = `${project.title.replace(/<br[^>]*>/g, '')} — 吴彦霖`;
   root.innerHTML = `
     <div class="wrap case-hero"><a class="case-back" href="index.html#work">← 返回精选项目</a><div class="case-kicker">${project.label}</div><h1>${project.title}</h1><p class="case-deck">${project.deck}</p><div class="case-facts">${project.facts.map(([label,value]) => `<div class="case-fact"><span>${label}</span><strong>${value}</strong></div>`).join('')}</div></div>
     ${project.media}
